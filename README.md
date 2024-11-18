@@ -10,45 +10,11 @@ This project was made by taking above research paper as reference under the facu
 .
 ├── data                              # XTREME data and translation data
 │   ├── xnli
-│   │   ├── XNLI-MT-1.0
-│   │   ├── XNLI-1.0          
-│   │   ├── translate-test
-│   │   ├── translate-dev
-│   │   ├── translate-train-en  # back-translation data
-│   ├── pawsx
-│   │   ├── en (each language)
-│   │   │   ├── train.tsv (only en)
-│   │   │   ├── dev_2k.tsv
-│   │   │   ├── test_2k.tsv
-│   │   ├── translate-train        
-│   │   ├── translate-test
-│   │   ├── translate-dev
-│   │   ├── translate-train-en
-│   ├── udpos/panx
-│   │   ├── en (each language) 
-│   │   │   ├── train.tsv (only en)
-│   │   │   ├── dev.tsv
-│   │   │   ├── test.tsv
-│   │   ├── translate-train-logits
-│   │   ├── translate-test-token
-│   │   ├── translate-dev-token
-│   │   ├── translate-train-en-token
-│   ├── squad
-│   │   ├── train-v1.1.json
-│   │   ├── translate-train
-│   │   ├── translate-train-en
-│   ├── mlqa
-│   │   ├── dev
-│   │   ├── test
-│   │   ├── translate-test
-│   ├── xquad
-│   │   ├── test
-│   │   ├── translate-test
-│   ├── tydiqa
-│   │   ├── dev
-│   │   ├── translate-test
-│   │   ├── translate-train
-│   │   ├── translate-train-en         
+│      ├── XNLI-MT-1.0
+│      ├── XNLI-1.0          
+│      ├── translate-test
+│      ├── translate-dev
+│      ├── translate-train-en  # back-translation data  
 ├── scripts
 ├── xmixup
 ├── README.md
@@ -72,6 +38,6 @@ bash ./scripts/train.sh [pretrained_model] [task_name] [data_dir] [output_dir]
 ```
 where the options are described as follows:
 - `[pretrained_model]`: `xlmr` or `mbert`
-- `[task_name]`: `pawsx`, `xnli`, `udpos`, `panx`, `mlqa`, `xquad`, `tydiqa`
+- `[task_name]`: `xnli`
 - `[data_dir]`: data directory
 - `[output_dir]`: output directory
