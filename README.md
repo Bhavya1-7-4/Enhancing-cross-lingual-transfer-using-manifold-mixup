@@ -3,7 +3,7 @@
 ## 📝 Overview
 This project explores the use of **Manifold Mixup (X-Mixup)** to enhance cross-lingual transfer in Natural Language Processing (NLP). Traditional models often struggle when trained in one language and tested in another, especially in **low-resource scenarios**. By applying X-Mixup, we aim to help models generalize better by **mixing internal representations** (not just raw inputs), allowing more effective knowledge transfer across languages.
 
-> ✨ This work was conducted as part of an NLP internship under the guidance of Dr. Karthick Seshadri sir and Dr. Sastry sir at **NIT Andhra Pradesh**.
+> ✨ This work was conducted as part of an research internship under the guidance of Dr. Karthick Seshadri sir and Dr. Sastry sir at **NIT Andhra Pradesh**.
 
 ---
 
