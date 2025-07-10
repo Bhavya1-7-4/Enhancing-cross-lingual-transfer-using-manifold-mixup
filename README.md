@@ -1,4 +1,32 @@
-# X-Mixup
+# Enhancing Cross-Lingual Transfer using Manifold Mixup 🧠🌍
+
+## 📝 Overview
+This project explores the use of **Manifold Mixup (X-Mixup)** to enhance cross-lingual transfer in Natural Language Processing (NLP). Traditional models often struggle when trained in one language and tested in another, especially in **low-resource scenarios**. By applying X-Mixup, we aim to help models generalize better by **mixing internal representations** (not just raw inputs), allowing more effective knowledge transfer across languages.
+
+> ✨ This work was conducted as part of an NLP internship under the guidance of Dr. Karthick Seshadri sir and Dr. Sastry sir at **NIT Andhra Pradesh**.
+
+---
+
+## 🔍 Problem Statement
+- Multilingual models like mBERT can struggle to perform consistently across languages due to data scarcity or domain differences.
+- How can we improve performance in low-resource or unseen languages using **representation-level regularization**?
+
+---
+
+## 💡 Why Manifold Mixup?
+- **Traditional Mixup** mixes inputs or labels.
+- **Manifold Mixup (X-Mixup)** interpolates within hidden layers of the model — like mixing internal thoughts 🧠.
+- Encourages the model to learn **smoother decision boundaries** and **generalize better** across tasks and languages.
+
+---
+
+## ⚙️ Methodology
+- **Model Used**: Multilingual DistilBERT (or similar)
+- **Task**: Cross-lingual classification (trained in English, tested on other languages like Hindi/Telugu)
+- **Technique**: Apply manifold mixup at intermediate layers during fine-tuning
+- **Evaluation**: Accuracy, F1-Score across languages (with vs. without mixup)
+
+---
 
 Implementation of ICLR 2022 paper "[Enhancing Cross-lingual Transfer by Manifold Mixup](https://openreview.net/pdf?id=OjPmfr9GkVv)".
 
@@ -41,3 +69,18 @@ where the options are described as follows:
 - `[task_name]`: `xnli`
 - `[data_dir]`: data directory
 - `[output_dir]`: output directory
+
+## 🌐 Real-World Applications
+- **Multilingual chatbots**
+- **AI-powered translators** (e.g., English to regional languages)
+- **Voice assistants in code-mixed speech**
+- **News or social media analysis in low-resource languages**
+
+---
+
+## 🤝 Acknowledgements
+- Guided by **Dr. Karthick Seshadri** and **Dr. Sastry**, Department of CSE, NIT Andhra Pradesh.
+- Inspired by research in **representation learning**, **transfer learning**, and **low-resource NLP**.
+
+---
+## ⭐ If you found this helpful, don't forget to star the repo!
